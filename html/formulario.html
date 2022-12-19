@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Validacion Formulario</title>
     
 </head>
 <h1><center>Formulario de Registro</center></h1>
 <body>
     <main>
-        <h4>
         <form action="" class="formulario" id="formulario">
-        <!--Grupo nombre-->
+            <!--GrupoNombre-->
             <div class="formulario__grupo" id="grupo__nombre">
                 <label for="nombre" class="formulario__label">Nombre</label>
                 <div class="formulario__grupo-input">
@@ -24,18 +23,18 @@
                 <p class="formulario__input-error">Solo puede contener letras </p>
             </div>
 
-        <!--Grupo apellidos-->
+            <!--Grupo apellidos-->
             <div class="formulario__grupo" id="grupo__apellidos">
-                <label for="apellidos" class="formulario__label">Apellidos</label>
+                <label for=grupo__nombre class="formulario__label">Apellidos</label>
                 <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="apellidos" id="nombre" placeholder="apellidos">
+                    <input type="text" class="formulario__input" name="apellidos" id="apellidos" placeholder="apellidos">
                     <i class="formulario__validacion-estado fa-sharp fa-solid fa-circle-xmark"></i>
 
                 </div>
                 <p class="formulario__input-error"> Solo puede contener letras </p>
             </div>
 
-         <!--Grupo contraseña-->
+            <!--Grupo contraseña-->
             <div class="formulario__grupo" id="grupo__password">
                 <label for="password" class="formulario__label">Contraseña</label>
                 <div class="formulario__grupo-input">
@@ -45,7 +44,7 @@
                 <p class="formulario__input-error">El usuario tiene que ser de 4 a 10 digitos </p>
             </div>
 
-        <!--Grupo contraseña2-->
+            <!--Grupo contraseña2-->
             <div class="formulario__grupo" id="grupo__password2">
                 <label for="password2" class="formulario__label">Confirmar Contraseña</label>
                 <div class="formulario__grupo-input">
@@ -55,20 +54,20 @@
                 <p class="formulario__input-error">Ambas contraseñas deben coincidir </p>
             </div>
 
-        <!--Grupo Correo Electrónico-->
+            <!--Grupo Correo Electrónico-->
             <div class="formulario__grupo" id="grupo__correo">
-                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <label for=grupo__correo class="formulario__label">Correo Electrónico</label>
                 <div class="formulario__grupo-input">
-                    <input type="email" class="formulario__input" name="correo" id="nombre" placeholder="correo@.com">
+                    <input type="email" class="formulario__input" name="correo" id="mail" placeholder="correo@.com">
                     <i class="formulario__validacion-estado fa-sharp fa-solid fa-circle-xmark"></i>
 
                 </div>
                 <p class="formulario__input-error"> Solo puede contener letras, numeros, caracteres especiales </p>
             </div>
 
-        <!--Grupo Telefono-->
-             <div class="formulario__grupo" id="grupo__telefono">
-                <label for="telefono" class="formulario__label">Telefono</label>
+            <!--Grupo Telefono-->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for=grupo__telefono class="formulario__label">Telefono</label>
                 <div class="formulario__grupo-input">
                     <input type="text" class="formulario__input" name="telefono" id="nombre" placeholder="3100000000">
                     <i class="formulario__validacion-estado fa-sharp fa-solid fa-circle-xmark"></i>
@@ -77,7 +76,7 @@
                 <p class="formulario__input-error"> Solo puede contener números </p>
             </div>
 
-        <!--Grupo Registrarse-->
+            <!--Grupo Registrarse-->
             <div class="formulario__grupo" id="grupo__registrarse">
                 <label class="formulario__label">
                     <input class="formulario__checkbox" type="checkbox" name="registrarse" id="registrarse">
@@ -86,18 +85,17 @@
                 </label>
             </div>
             <div class="formulario__mensaje" id="formulario__mensaje">
-               <p><i class="fa-solid fa-circle-exclamation"></i><b>Error: </b> Por favor diligencie correctamente </p> 
+                <p><i class="fa-solid fa-circle-exclamation"></i><b>Error: </b> Por favor diligencie correctamente </p>
             </div>
 
             <div class="formulario__grupo formulario__grupo-btn-enviar">
                 <button type="submit" class="formulario__btn">Enviar</button>
                 <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡¡Formulario Enviado!!</p>
             </div>
-        </h4>
         </form>
     </main>
 
-    <script src="js/formulario.js"></script>
+    <script src="../js/forrmRegistro.js"></script>
     <script src="https://kit.fontawesone.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     
 </body>
